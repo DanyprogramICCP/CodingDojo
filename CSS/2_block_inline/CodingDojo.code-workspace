@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../.."
+		},
+		{
+			"path": "../../../../Downloads/block_inline"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "block_inline"
+	}
+}
