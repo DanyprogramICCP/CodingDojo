@@ -8,3 +8,6 @@ promedio = sum(numeros) / len(numeros)
 
 # Imprimimos el resultado
 print("El promedio es:", promedio)
+
+x = 5
+print(type(x))
