@@ -1,13 +1,15 @@
-numeros_str = input("Ingrese los números separados por comas: ")
+# Tarea: Imprime "Hola, Mundo"
+print("Hola, mundo")
+# Imprime "Hola, Noelle" con el nombre en una variable
+nombre = "Noelle"
+print("Hola " + nombre)
+print("Hola", nombre)
+# Imprimir Hola 42
+num = 42
+print("Hola", num)
+print( "Hola " + str(42) + "!")
+fave_food1 = "sushi"
+fave_food2 = "pizza"
+print("Me encanta comer {} y {}.".format(fave_food1,fave_food2))
+print(f"Me encanta comer{fave_food1} & {fave_food2}.")
 
-# Convertimos los números ingresados en una lista de enteros
-numeros = [int(num) for num in numeros_str.split(',')]
-
-# Calculamos el promedio de los números
-promedio = sum(numeros) / len(numeros)
-
-# Imprimimos el resultado
-print("El promedio es:", promedio)
-
-x = 5
-print(type(x))

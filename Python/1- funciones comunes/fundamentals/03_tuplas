@@ -1,0 +1,47 @@
+# import math
+from translate import Translator
+# tupla_datos = ('física', 'química', 1997, 2000)
+# tupla_num = (1, 2, 3, 4, 5 )
+# tupla_letras = "a", "b", "c", "d"
+
+# perro = ("Canis Familiaris", "perro", "carnívoro", 12)
+
+# print(perro[2])
+# # el resultado es: carnívoro
+# # perro[0] = "X"
+# # TypeError: el objeto 'tupla' no admite la asignación de elementos
+
+# perro = perro + ("doméstico",)
+# # el resultado...
+# #("Canis Familiaris", "Perro", "carnívoro", 12, "doméstico")
+
+# perro = perro[:3] + ("el mejor amigo del hombre",) + perro[4:]
+# el resultado es...
+#("Canis Familiaris", "Perro", "carnívoro", "el mejor amigo del hombre", "doméstico")
+
+# x = (1,5,6,9,2)
+# print(len(x))
+# salida:
+# 5
+
+# def get_circle_area(r):
+#     # Return (circunferencia, área) de un círculo de radio r
+#     c = 2 * math.pi * r
+#     a = math.pi * r * r
+#     return (c, a)
+
+# result = get_circle_area(5)
+# print(result)
+
+
+
+perro = ("Canis Familiaris", "perro", "carnívoro", 12)
+translator = Translator(to_lang='en')
+
+traduccion = []
+for palabra in perro:
+    traduccion.append(translator.translate(palabra))
+
+print(tuple(traduccion))
+# el resultado se vería así: ("dog", "chien", "perro")
+
