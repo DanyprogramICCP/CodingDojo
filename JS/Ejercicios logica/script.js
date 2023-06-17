@@ -1,6 +1,5 @@
 // Sumar n numeros pares ingresados por teclado
 var count = 0;
-var n = 0;
 var arr = [];
 var sum = 0;
 
