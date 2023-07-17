@@ -9,7 +9,8 @@ class Persona:
     @property
     def nombre(self):
         return self._nombre
-    #metodo set para modificar la variable
+    # Metodo set para modificar la variable - Si eliminamos este metodo el atributo deja
+    # de ser modificable.
     @nombre.setter
     def nombre(self, nombre):
         self._nombre = nombre
@@ -22,7 +23,7 @@ class Persona:
 persona1 = Persona("Dany","Hernandez", 29)
 persona1.mostrarDetalle()
 persona1.nombre = 'Alberto'
-print(persona1.nombre)
+persona1.mostrarDetalle()
 '''
 Para encapsular en Python no es posible generar restricciones de acceso publico o priva
 do, de modo que se sugiere hacer referencia a las variables con _. por ejemplo _nombre.
