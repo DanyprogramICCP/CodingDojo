@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad de JavaScript - Solución</title>
+</head>
+<body>
+    <h1>Actividad de JavaScript - Solución</h1>
+
+    <!-- Ejercicio 1: Declaración de variables -->
+    <p>Ejercicio 1: Declaración de variables</p>
+    <button onclick="declararVariables()">Declarar Variables</button>
+
+    <!-- Ejercicio 2: Asignación de valores -->
+    <p>Ejercicio 2: Asignación de valores</p>
+    <button onclick="asignarValores()">Asignar Valores</button>
+
+    <!-- Ejercicio 3: Operaciones matemáticas -->
+    <p>Ejercicio 3: Operaciones matemáticas</p>
+    <button onclick="realizarOperaciones()">Realizar Operaciones</button>
+
+    <!-- Ejercicio 4: Manipulación de cadenas -->
+    <p>Ejercicio 4: Manipulación de cadenas</p>
+    <button onclick="manipularCadenas()">Manipular Cadenas</button>
+
+    <script>
+        // Ejercicio 1: Declaración de variables
+        function declararVariables() {
+            var edad = 28;
+            var anioNacimiento = 1995;
+            var anioActual = new Date().getFullYear();
+            var edadActual = anioActual - anioNacimiento;
+            alert("Edad actual: " + edadActual + " años.");
+        }
+
+        // Ejercicio 2: Asignación de valores
+        function asignarValores() {
+            var x = 15;
+            var y;
+            y = x;
+            alert("El valor de y es: " + y);
+        }
+
+        // Ejercicio 3: Operaciones matemáticas
+        function realizarOperaciones() {
+            var a = 50;
+            var b = 10;
+            var suma = a + b;
+            var resta = a - b;
+            var multiplicacion = a * b;
+            var division = a / b;
+            alert("Suma: " + suma + "\nResta: " + resta + "\nMultiplicación: " + multiplicacion + "\nDivisión: " + division);
+        }
+
+        // Ejercicio 4: Manipulación de cadenas
+        function manipularCadenas() {
+            var nombre = "Juan";
+            var apellido = "Pérez";
+            var mensaje = "Mi nombre es " + nombre + " " + apellido;
+            var longitudMensaje = mensaje.length;
+            var primerCaracter = mensaje[0];
+            alert("Mensaje: " + mensaje + "\nLongitud del mensaje: " + longitudMensaje + "\nPrimer carácter: " + primerCaracter);
+        }
+    </script>
+</body>
+</html>

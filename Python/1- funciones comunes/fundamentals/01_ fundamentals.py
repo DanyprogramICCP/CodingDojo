@@ -112,6 +112,6 @@ print(x.title())
 # salida:
 "Hola Mundo"
 
-lista = ['Hola', 'mundo', 'de', 'Python']
+lista = ['Hola','mundo','de','Python']
 cadena_concatenada = ' '.join(lista)
 print(cadena_concatenada)

@@ -19,11 +19,17 @@ class Persona:
     def mostrarDetalle(self):
         print(f'Persona: {self._nombre} {self.apellido} {self.edad}')
         
+    def __del__(self):
+        print(f'Persona:  {self._nombre} {self.apellido}')
+        
 # Instancia de la clase u objeto
-persona1 = Persona("Dany","Hernandez", 29)
-persona1.mostrarDetalle()
-persona1.nombre = 'Alberto'
-persona1.mostrarDetalle()
+if __name__ == '__main__':
+    persona1 = Persona("Dany","Hernandez", 29)
+    persona1.mostrarDetalle()
+    persona1.nombre = 'Alberto'
+    persona1.mostrarDetalle()
+
+    print(__name__)
 '''
 Para encapsular en Python no es posible generar restricciones de acceso publico o priva
 do, de modo que se sugiere hacer referencia a las variables con _. por ejemplo _nombre.
