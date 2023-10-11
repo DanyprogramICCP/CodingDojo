@@ -10,3 +10,8 @@ class Empleado(Persona):
         
 empleado1 = Empleado("Juan", 39, 5000)
 print(empleado1.nombre)
+
+persona1 = Persona("Dany", 30)
+print(f'Nombre: {persona1.nombre}\nEdad: {persona1.edad}')
+empleado2 = Empleado("Dany", 30, 1000000)
+print(f'Empleado: {empleado2.nombre}\nSueldo: {empleado2.sueldo} ')
